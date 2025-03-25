@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+* {
+  font-family: serif, "Times New Roman", Times;
+}
+
+.txt-shadow {
+  text-shadow: 6px 4px 4px rgba(0, 0, 0, 0.6);
+}
