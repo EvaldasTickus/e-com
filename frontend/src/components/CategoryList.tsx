@@ -29,7 +29,7 @@ const CategoryList: React.FC<CategoryListProps> = ({
   return (
     <div className="relative inline-block w-64">
       <select 
-        className="appearance-none w-full ml-28 bg-black text-white border-1 border-white rounded-md p-4 text-lg pr-10"
+        className="appearance-none w-full ml-8 bg-black text-white border-1 border-white rounded-md p-4 text-lg pr-10"
         value={selectedCategoryId || ''}
         onChange={(e) => {
           const value = e.target.value 
@@ -49,7 +49,7 @@ const CategoryList: React.FC<CategoryListProps> = ({
           </option>
         ))}
       </select>
-      <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-white">
+      <div className="pointer-events-none right-0 absolute inset-y-0 flex items-center px-2 text-white">
         <IoMdArrowDropdown size={24} />
       </div>
     </div>
