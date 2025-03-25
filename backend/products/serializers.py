@@ -9,11 +9,11 @@ class CategorySerializer(serializers.ModelSerializer):
 class ProductSizeSerializer(serializers.ModelSerializer):
     class Meta:
         model = Size
-        fields = ['size']  # You can include other fields if needed
+        fields = ['size'] 
 
 class ProductSerializer(serializers.ModelSerializer):
     category = CategorySerializer()
-    sizes = ProductSizeSerializer(many=True)  # This returns the full category object
+    sizes = ProductSizeSerializer(many=True) 
 
     class Meta:
         model = Product

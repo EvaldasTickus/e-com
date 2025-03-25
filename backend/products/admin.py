@@ -3,7 +3,7 @@ from .models import Product, Category, Size
 
 class ProductAdmin(admin.ModelAdmin):
     list_display = ("title", "category", "price")
-    filter_horizontal = ("sizes",)  # Enables multi-select for sizes
+    filter_horizontal = ("sizes")
 
 admin.site.register(Product, ProductAdmin)
 admin.site.register(Category)

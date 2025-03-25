@@ -8,7 +8,6 @@ class Category(models.Model):
     def __str__(self):
         return self.name
 
-# Size Model (Stores all possible sizes)
 class Size(models.Model):
     size = models.CharField(max_length=10, unique=True)
 
